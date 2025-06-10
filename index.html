@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Purple Weather App</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="weather-app">
+    <h1>Weather App</h1>
+    <input
+      type="text"
+      id="cityInput"
+      placeholder="Enter city name"
+      autocomplete="off"
+    />
+    <button id="getWeatherBtn">Get Weather</button>
+
+    <div id="weatherResult" class="weather-result" style="display:none;">
+      <h2 id="cityName"></h2>
+      <img id="weatherIcon" class="weather-icon" src="" alt="Weather Icon" />
+      <div class="temp" id="temperature"></div>
+      <div class="desc" id="description"></div>
+      <div class="extra-info">
+        <div>
+          <strong>Humidity</strong>
+          <div id="humidity"></div>
+        </div>
+        <div>
+          <strong>Wind Speed</strong>
+          <div id="windSpeed"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="errorMsg" class="error" style="display:none;"></div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
